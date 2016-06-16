@@ -1,10 +1,11 @@
 var CarLot = ((originalCarLot) => {
   var inventoryArray = [];
 
-  return originalCarLot {
+
     originalCarLot.getInventory = () => {
 
     },
+
     originalCarLot.loadInventory = (callback) => {
       var inventoryRequest = new XMLHttpRequest();
       // Using the => (fat arrow), requires being explicit with JSON.parse(this.responseText)
@@ -23,7 +24,7 @@ var CarLot = ((originalCarLot) => {
       inventoryRequest.open(`GET`, `inventory.json`);
       inventoryRequest.send();
     }
-    
-  };
 
+  return originalCarLot 
+// Either existing or brand new object
 })(CarLot || {});

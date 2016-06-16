@@ -1,0 +1,43 @@
+body {
+	background-color: #E9C490;
+	width: 100%;
+}
+
+/************************
+*** NAVBAR PROPERTIES ***
+************************/
+.nav-prop {
+	background-color: #6B4105;
+	border: 4px solid #8A5C1B;
+	border-radius: 2px;
+}
+
+.logo {
+	color: #E9C490;	
+}
+
+
+/*******************************
+*** CAR-CONTAINER PROPERTIES ***
+*******************************/
+#cars-container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+
+.row {
+	margin: 0 auto;
+	padding: 10px 0px 10px 3px;
+}
+
+/**************************
+*** CAR-CARD PROPERTIES ***
+**************************/
+.car {
+	width: 300px;
+	margin: 0 18px;
+	border: 4px solid #8A5C1B;
+	border-radius: 4px;
+	padding: 15px;
+}
