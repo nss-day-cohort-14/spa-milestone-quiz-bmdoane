@@ -16,16 +16,22 @@ var CarLot = ((originalCarLot) => {
 		  		<p>${inventory[i].model}</p>
 		  		<p>${inventory[i].year}</p>
 		  		<p>Price: $${inventory[i].price}</p>
-		  		<p>Color: ${inventory[i].color}</p>
+		  		<p class="card-border">${inventory[i].color}</p>
 		  		<p>Availability: ${inventory[i].purchased}</p>
 		  		<p id='descrip--${counter}'>About: ${inventory[i].description}</p>
 		  	</div>`;
 		  	if ((i+1) % 3 === 0) {
 		  		inventoryString += `</div>`;
 		  	}
+		  // To attach eventListener in this scenario you need to build the DOM and attach before the counter	
+		  carDisplay.innerHTML = inventoryString;
+		  var card = document.getElementById(`card--${counter}`);
+		  console.log("card", card);
+			card.addEventListener('click', function(event) {
+				console.log("click");
+			});
 
 		  counter++;
-		  carDisplay.innerHTML = inventoryString;
 	  } // for loop
 
   // Now that the DOM is loaded, establish all the event listeners needed

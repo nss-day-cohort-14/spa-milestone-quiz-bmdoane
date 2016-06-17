@@ -12,8 +12,9 @@ body {
 	border-radius: 2px;
 }
 
-.logo {
-	color: #E9C490;	
+.navbar-default .navbar-brand {
+	color: #E9C490;
+	font-weight: 800;	
 }
 
 
@@ -28,7 +29,7 @@ body {
 
 .row {
 	margin: 0 auto;
-	padding: 10px 0px 10px 3px;
+	padding: 10px 0px 0px 3px;
 }
 
 /**************************
@@ -36,8 +37,9 @@ body {
 **************************/
 .car {
 	width: 300px;
-	margin: 0 18px;
+	margin: 0 18px 26px 18px;
 	border: 4px solid #8A5C1B;
 	border-radius: 4px;
 	padding: 15px;
+	text-align: center;
 }
