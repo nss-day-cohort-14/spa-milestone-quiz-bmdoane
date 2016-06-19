@@ -10,32 +10,30 @@ var CarLot = ((originalCarLot) => {
 	  	if (i % 3 === 0) {
 	  		inventoryString += `<div class='row'>`;
 	  	}
-		  	inventoryString += `
-		  	<div id='card--${counter}' class='car col-md-4'>
+	  		// Only = (not +=) on this string 
+		  	inventoryString = `
+		  	<div id='card--${counter}' class='car col-md-4' style='border: 4px solid ${inventory[i].color}'>
 		  		<p>${inventory[i].make}</p>
 		  		<p>${inventory[i].model}</p>
 		  		<p>${inventory[i].year}</p>
 		  		<p>Price: $${inventory[i].price}</p>
-		  		<p class="card-border">${inventory[i].color}</p>
+		  		<p class='card-border'>${inventory[i].color}</p>
 		  		<p>Availability: ${inventory[i].purchased}</p>
 		  		<p id='descrip--${counter}'>About: ${inventory[i].description}</p>
 		  	</div>`;
+		  	// Math here allows for end of row after 3rd iteration/card creation
 		  	if ((i+1) % 3 === 0) {
 		  		inventoryString += `</div>`;
 		  	}
-		  // To attach eventListener in this scenario you need to build the DOM and attach before the counter	
-		  carDisplay.innerHTML = inventoryString;
-		  var card = document.getElementById(`card--${counter}`);
-		  console.log("card", card);
-			card.addEventListener('click', function(event) {
-				console.log("click");
-			});
+
+		  carDisplay.innerHTML += inventoryString;
 
 		  counter++;
+
 	  } // for loop
 
-  // Now that the DOM is loaded, establish all the event listeners needed
-	  //originalCarLot.activateEvents();
+  	// Now that the DOM is loaded, establish all the event listeners needed
+	  originalCarLot.activateEvents();
 
 	} // buildDOM function
 

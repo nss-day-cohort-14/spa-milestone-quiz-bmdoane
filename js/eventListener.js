@@ -1,9 +1,18 @@
 var CarLot = ((originalCarLot) => {
-  var carColors = document.getElementsByClassName(`card-border`);
-  console.log("carColors", carColors);
+  originalCarLot.domCards = () => {
+    var cards = document.getElementsByClassName('car');
+    return cards;
+  }
 
   originalCarLot.activateEvents = () => {  
-    
+
+    var cars = originalCarLot.domCards();
+    for (var i = 0; i < cars.length; i++) {
+      cars[i].addEventListener('click', function(event) {
+        console.log("event.currentTarget", event.currentTarget.id);
+
+      });
+    }
 
   }
 

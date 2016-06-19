@@ -14,8 +14,7 @@ var CarLot = ((originalCarLot) => {
 
         inventoryArray = inventoryData.cars;
         console.log("inventoryArray", inventoryArray);
-        callback(inventoryArray);
-      });
+        callback(inventoryArray);});
 
       inventoryRequest.addEventListener(`error`, () => {
         console.log(`An error occurred while transfering the inventoryData`);

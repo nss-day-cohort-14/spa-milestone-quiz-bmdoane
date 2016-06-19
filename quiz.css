@@ -38,8 +38,13 @@ body {
 .car {
 	width: 300px;
 	margin: 0 18px 26px 18px;
-	border: 4px solid #8A5C1B;
+	/*	*/
 	border-radius: 4px;
 	padding: 15px;
 	text-align: center;
+}
+
+.change {
+	border-color: purple;
+	background-color: white;
 }
