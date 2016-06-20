@@ -12,12 +12,12 @@ var CarLot = ((originalCarLot) => {
 	  	}
 	  		// Only = (not +=) on this string 
 		  	inventoryString = `
-		  	<div id='card--${counter}' class='car col-md-4' style='border: 4px solid ${inventory[i].color}'>
+		  	<div id='card--${counter}' class='car col-md-4'>
 		  		<p>${inventory[i].make}</p>
 		  		<p>${inventory[i].model}</p>
 		  		<p>${inventory[i].year}</p>
 		  		<p>Price: $${inventory[i].price}</p>
-		  		<p class='card-border'>${inventory[i].color}</p>
+		  		<p id='border--${counter}'>${inventory[i].color}</p>
 		  		<p>Availability: ${inventory[i].purchased}</p>
 		  		<p id='descrip--${counter}'>About: ${inventory[i].description}</p>
 		  	</div>`;
@@ -27,7 +27,6 @@ var CarLot = ((originalCarLot) => {
 		  	}
 
 		  carDisplay.innerHTML += inventoryString;
-
 		  counter++;
 
 	  } // for loop

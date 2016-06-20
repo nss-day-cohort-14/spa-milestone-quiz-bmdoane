@@ -3,7 +3,7 @@ var CarLot = ((originalCarLot) => {
 
 
     originalCarLot.getInventory = () => {
-
+      return inventoryArray;
     },
 
     originalCarLot.loadInventory = (callback) => {
