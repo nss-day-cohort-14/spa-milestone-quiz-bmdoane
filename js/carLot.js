@@ -12,7 +12,6 @@ var CarLot = ((originalCarLot) => {
         var inventoryData = JSON.parse(inventoryRequest.responseText);
 
         inventoryArray = inventoryData.cars;
-        //console.log("inventoryArray", inventoryArray);
         callback(inventoryArray);});
 
       inventoryRequest.addEventListener(`error`, () => {

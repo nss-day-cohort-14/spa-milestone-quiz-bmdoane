@@ -8,7 +8,6 @@ var CarLot = ((originalCarLot) => {
       var cars = originalCarLot.domCards();
       cars[i].setAttribute(`style`, `border: 4px solid ${inventory[i].color}`);
     }
-    console.log("cars", cars);
   }
 
   originalCarLot.cardChange = (car, color) => {
