@@ -12,14 +12,14 @@ var CarLot = ((originalCarLot) => {
 	  	}
 	  		// Only = (not +=) on this string 
 		  	inventoryString = `
-		  	<div id='card--${counter}' class='car col-md-4'>
+		  	<div id='card--${counter}' class='car col-md-4 col-sm-12'>
 		  		<p>${inventory[i].make}</p>
 		  		<p>${inventory[i].model}</p>
 		  		<p>${inventory[i].year}</p>
 		  		<p>Price: $${inventory[i].price}</p>
 		  		<p id='border--${counter}'>${inventory[i].color}</p>
 		  		<p>Availability: ${inventory[i].purchased}</p>
-		  		<p id='descrip--${counter}'>About: ${inventory[i].description}</p>
+		  		<p id='descrip--${counter}' class='description'>About: ${inventory[i].description}</p>
 		  	</div>`;
 		  	// Math here allows for end of row after 3rd iteration/card creation
 		  	if ((i+1) % 3 === 0) {
