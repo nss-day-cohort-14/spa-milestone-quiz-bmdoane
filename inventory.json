@@ -3,17 +3,17 @@
     {
       "make": "Nissan",
       "model": "Rogue",
-      "year": "2006",
-      "price": "8999",
+      "year": "2012",
+      "price": "24,810",
       "color": "green",
-      "purchased": false,
+      "purchased": true,
       "description": "Beef ribs pork chop prosciutto ball tip rump alcatra kevin doner. Cupim biltong short ribs leberkas kielbasa, bresaola tenderloin shoulder pastrami. Meatball filet mignon prosciutto turkey pig landjaeger cow. Cow pork belly sausage doner bacon jerky kielbasa ham hock shankle meatloaf meatball ground round brisket capicola pork."
     },
     {
       "make": "Jeep",
       "model": "Cherokee",
-      "year": "2006",
-      "price": "8999",
+      "year": "2013",
+      "price": "37,095",
       "color": "white",
       "purchased": false,
       "description": "Beef ribs pork chop prosciutto ball tip rump alcatra kevin doner. Cupim biltong short ribs leberkas kielbasa, bresaola tenderloin shoulder pastrami. Meatball filet mignon prosciutto turkey pig landjaeger cow. Cow pork belly sausage doner bacon jerky kielbasa ham hock shankle meatloaf meatball ground round brisket capicola pork."
@@ -21,17 +21,17 @@
     {
       "make": "Pontiac",
       "model": "Firebird",
-      "year": "2006",
-      "price": "8999",
+      "year": "2002",
+      "price": "25,995",
       "color": "orange",
-      "purchased": false,
+      "purchased": true,
       "description": "Beef ribs pork chop prosciutto ball tip rump alcatra kevin doner. Cupim biltong short ribs leberkas kielbasa, bresaola tenderloin shoulder pastrami. Meatball filet mignon prosciutto turkey pig landjaeger cow. Cow pork belly sausage doner bacon jerky kielbasa ham hock shankle meatloaf meatball ground round brisket capicola pork."
     },
     {
       "make": "Volkswagon",
       "model": "Passat",
-      "year": "2006",
-      "price": "8999",
+      "year": "2014",
+      "price": "18,608",
       "color": "red",
       "purchased": false,
       "description": "Beef ribs pork chop prosciutto ball tip rump alcatra kevin doner. Cupim biltong short ribs leberkas kielbasa, bresaola tenderloin shoulder pastrami. Meatball filet mignon prosciutto turkey pig landjaeger cow. Cow pork belly sausage doner bacon jerky kielbasa ham hock shankle meatloaf meatball ground round brisket capicola pork."
@@ -39,18 +39,18 @@
     {
       "make": "Ford",
       "model": "Taurus",
-      "year": "2006",
-      "price": "8999",
+      "year": "2004",
+      "price": "22,460",
       "color": "blue",
-      "purchased": false,
+      "purchased": true,
       "description": "Beef ribs pork chop prosciutto ball tip rump alcatra kevin doner. Cupim biltong short ribs leberkas kielbasa, bresaola tenderloin shoulder pastrami. Meatball filet mignon prosciutto turkey pig landjaeger cow. Cow pork belly sausage doner bacon jerky kielbasa ham hock shankle meatloaf meatball ground round brisket capicola pork."
     },
     {
       "make": "Chevy",
       "model": "S-10",
-      "year": "2006",
-      "price": "8999",
-      "color": "lightblue",
+      "year": "2004",
+      "price": "7,864",
+      "color": "maroon",
       "purchased": false,
       "description": "Beef ribs pork chop prosciutto ball tip rump alcatra kevin doner. Cupim biltong short ribs leberkas kielbasa, bresaola tenderloin shoulder pastrami. Meatball filet mignon prosciutto turkey pig landjaeger cow. Cow pork belly sausage doner bacon jerky kielbasa ham hock shankle meatloaf meatball ground round brisket capicola pork."
     }

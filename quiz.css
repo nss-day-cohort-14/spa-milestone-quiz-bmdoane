@@ -1,5 +1,5 @@
 body {
-	background-color: #E9C490;
+	background-color: #C5C5E0;
 	width: 100%;
 }
 
@@ -7,13 +7,14 @@ body {
 *** NAVBAR PROPERTIES ***
 ************************/
 .nav-prop {
-	background-color: #6B4105;
-	border: 4px solid #8A5C1B;
+	background-color: #050518;
+	border: 4px solid #9492E0;
 	border-radius: 2px;
 }
 
 .navbar-default .navbar-brand {
-	color: #E9C490;
+	margin-top: 8px;
+	color: #C5C5E0;
 	font-weight: 800;	
 }
 
@@ -35,13 +36,14 @@ body {
 *** CAR-CARD PROPERTIES ***
 **************************/
 .car {
-	width: 290px;
+	width: 300px;
 	height: 415px;
 	margin: 20px 18px 20px 18px;
 	padding: 10px;
 	text-align: center;
 }
 
+/*Reduce padding with class change to allow for thicker border and no float concerns*/
 .change {
 	background-color: white;
 	padding: 6px;

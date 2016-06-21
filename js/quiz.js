@@ -4,8 +4,15 @@ var CarLot = ((originalCarLot) => {
 	  var carDisplay = document.getElementById(`cars-container`);
 	  var inventoryString = ``;
 	  var counter = 1;
+	  var availability;
 
 	  for (var i = 0; i < inventory.length; i++) {
+	  	// Establish purchased value
+	  	if (inventory[i].purchased === false) {
+	  		availability = `On the lot!`;
+	  	} else {
+	  		availability = `Sold`;
+	  	}
 	  	// First iteration 0=0 row is created, then after 3rd card, row is created 
 	  	if (i % 3 === 0) {
 	  		inventoryString += `<div class='row'>`;
@@ -17,8 +24,8 @@ var CarLot = ((originalCarLot) => {
 		  		<p>${inventory[i].model}</p>
 		  		<p>${inventory[i].year}</p>
 		  		<p>Price: $${inventory[i].price}</p>
-		  		<p id='border--${counter}'>${inventory[i].color}</p>
-		  		<p>Availability: ${inventory[i].purchased}</p>
+		  		<p>Color: ${inventory[i].color}</p>
+		  		<p>Availability: ${availability}</p>
 		  		<p id='descrip--${counter}' class='description'>About: ${inventory[i].description}</p>
 		  	</div>`;
 		  	// Math here allows for end of row after 3rd iteration/card creation
