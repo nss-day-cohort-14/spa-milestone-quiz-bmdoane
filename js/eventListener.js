@@ -28,7 +28,13 @@ var CarLot = ((originalCarLot) => {
       console.log(`cardTextId`, cardTextId);
       var textToEdit = document.getElementById(`descrip--${cardTextId}`);
       textToEdit.innerHTML = text;
+      if (event.keyCode === 13) {
+        originalCarLot.resetCard();
+        inputEl.blur();
+        inputEl.value = ``;
+      }
     });
+
 
     reset.addEventListener(`click`, function(event) {
       originalCarLot.resetCard();
@@ -36,6 +42,8 @@ var CarLot = ((originalCarLot) => {
       inputEl.value = ``;
       reset.blur();
     });
+
+
 
   }
 
