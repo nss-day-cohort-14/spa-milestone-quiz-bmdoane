@@ -9,6 +9,7 @@ var CarLot = ((originalCarLot) => {
     originalCarLot.setColor(); 
 
     var inputEl = document.getElementById(`user-input`);
+    var reset = document.getElementById(`resetBtn`);
     var cars = originalCarLot.domCards();
     var card;
 
@@ -17,7 +18,7 @@ var CarLot = ((originalCarLot) => {
         card = event.currentTarget;
         originalCarLot.cardChange(card, `darkorange`);
         inputEl.focus();
-        inputEl.value = '';
+        inputEl.value = ``;
       });
     }
 
@@ -29,8 +30,12 @@ var CarLot = ((originalCarLot) => {
       textToEdit.innerHTML = text;
     });
 
-    //document.getElementById(`resetBtn`).addEventListener(`click`, originalCarLot.reset);
-
+    reset.addEventListener(`click`, function(event) {
+      originalCarLot.resetCard();
+      inputEl.blur();
+      inputEl.value = ``;
+      reset.blur();
+    });
 
   }
 
