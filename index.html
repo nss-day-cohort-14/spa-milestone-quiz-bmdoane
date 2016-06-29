@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SPA Quiz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top navbar-collapse nav-prop">
+	  <div class="container-fluid">
+			<a class="navbar-brand" href="#">Krusty's Kar Lot</a>
+	    <div class="navbar-form navbar-left" role="edit">
+        <div class="form-group">
+          <input id ="user-input" type="text" class="form-control" placeholder="Hey hey hey!">
+        </div>
+        <button id="resetBtn" type="button" class="btn btn-default navbar-btn">Clear!</button>
+      </div>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div id="cars-container"></div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/carLot.js"></script>
+	<script src="js/eventListener.js"></script>	
+	<script src="js/augmentObject.js"></script>
+	<script src="js/quiz.js"></script>
+</body>
+</html>

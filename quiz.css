@@ -1,0 +1,49 @@
+body {
+	background-color: #C5C5E0;
+	width: 100%;
+}
+
+/************************
+*** NAVBAR PROPERTIES ***
+************************/
+.nav-prop {
+	background-color: #050518;
+	border: 4px solid #9492E0;
+	border-radius: 2px;
+}
+
+.navbar-default .navbar-brand {
+	margin-top: 8px;
+	color: #C5C5E0;
+	font-weight: 800;	
+}
+
+/*******************************
+*** CAR-CONTAINER PROPERTIES ***
+*******************************/
+#cars-container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+
+.row {
+	margin: 0 auto;
+}
+
+/**************************
+*** CAR-CARD PROPERTIES ***
+**************************/
+.car {
+	width: 300px;
+	height: 415px;
+	margin: 20px 18px 20px 18px;
+	padding: 10px;
+	text-align: center;
+}
+
+/*Reduce padding with class change to allow for thicker border and no float concerns*/
+.change {
+	background-color: white;
+	padding: 6px;
+}
